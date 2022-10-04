@@ -1,0 +1,136 @@
+::-webkit-scrollbar {
+    display: none;
+}
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+body {
+    background: black;
+    transition: 0.5s;
+}
+body.active {
+    background: white;
+}
+.large-container {
+    height: 0;
+}
+img {
+    filter: blur(4px);
+    width: 195vh;
+    height: 100vh;
+    outline: none;
+}
+.TEXT {
+    position: absolute;
+    top: 45px;
+    margin-left: 5rem;
+    color: aliceblue;
+}
+.TEXT i {
+    position: relative;
+    top: -45px;
+    margin-left: 23rem;
+}
+.Name h3 {
+    position: absolute;
+    top: 100px;
+    margin-left: 5rem;
+    color: white;
+}
+/* Button */
+.container {
+    position: relative;
+    top: -160px;
+    margin-left: 80rem;
+    border-radius: 40%;
+}
+button {
+    position: absolute;
+    top: -4px;
+    padding: 10px;
+    margin-left: 2rem;
+    
+}
+#toggle-mode i {
+    position: relative;
+    top: 20px;
+    margin-left: 0.5rem;
+    color: white;
+}
+#toggle {
+    position: relative;
+    top: 25%;
+    left: 110px;
+    width: 50px;
+    height: 30px;
+    background-color: rgb(15, 1, 1);
+    border-radius: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+                inset 0 8px 60px rgba(0, 0, 0, 0.1),
+                inset 0 -4px -4px rgba(0, 0, 0, 0.1);
+}
+#toggle.active {
+    background: white;
+    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+                inset 0 2px 8px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 8px rgba(0, 0, 0, 0.05),
+}
+#toggle .indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 28px;
+    background: rgb(234, 231, 231);
+    border-radius: 28px;
+    transform: scale(0.9);
+    box-shadow: 0 0px 48px rgba(0, 0, 0, 0.5),
+                insert 0 4px 4px rgba(255, 255, 255, 0.2),
+                insert 0 -4px 4px rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+}
+#toggle.active .indicator {
+    left: 25px;
+    box-shadow: 0 0px 48px rgba(0, 0, 0, 0.5),
+                insert 0 4px 4px rgba(255, 255, 255, 0.2),
+                insert 0 -4px 4px rgba(255, 255, 255, 0.2);
+}
+.clock {
+    position: relative;
+    top: -500px;
+    margin-left: 2rem;
+}
+h4 {
+    color: white;
+    margin-left: 3rem;
+}
+h2 {
+    position: relative;
+    top: 300px;
+    color: white;
+    margin-left: 3rem;
+}
+#hours {
+    font-size: 15rem;
+    color: white;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+span {
+    font-size: 15rem;
+    color: white;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+#session {
+    font-size: 4rem;
+    position: absolute;
+    top: 210px;
+    margin-left: 1rem;
+    font-family: sans-serif;
+}
+
